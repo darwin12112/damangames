@@ -1,0 +1,310 @@
+@import "variables";
+
+// libraries
+@import "~bootstrap/scss/bootstrap.scss";
+@import "~react-infinite-calendar/styles";
+
+// base
+@import "base";
+@import "overrides";
+@import "extends";
+@import "animations";
+@import "utils/utils";
+
+// components
+@import "components/header";
+@import "components/sidebar";
+@import "components/content";
+@import "components/page";
+@import "components/widget";
+@import "components/search-input";
+
+// themes
+@import "themes/colors";
+
+// demos (only for demo pages)
+@import "demos/demos";
+
+nav.footer{
+    border-top: 1px solid #dee2e6;
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-top-color: rgb(222, 226, 230);
+    position: fixed;
+    bottom: 0;
+    left:0;
+    width:100%;
+    z-index:10000;
+    background-color: white;
+	padding:0px 80px;
+}
+
+nav.footer a.nav-link{
+    color:#444;
+    flex-direction: column;
+    display: flex;
+    padding: 8px 12px 10px;
+}
+nav.footer a.nav-link span{
+    font-size: 0.8rem;
+    
+}
+nav.footer a.nav-link.active{
+    color:#2962FF;
+}
+nav.footer .navbar-nav
+{
+    flex-flow: row wrap;
+    justify-content: space-between;
+    width:100%;
+}
+.EnjoyPage .btn {
+    margin: 4px;
+    font-size: 0.85rem;
+    @include media-breakpoint-down(xs) {
+        font-size: 0.7rem;
+        margin: 4px 1px;
+      }
+}
+.EnjoyPage table {
+    font-size: 0.85rem;
+    @include media-breakpoint-down(xs) {
+        font-size: 0.7rem;
+      }
+}
+.EnjoyPage table tr,.EnjoyPage table td{
+    padding:3px;
+    text-align: center; 
+}
+.green-circle{
+    border-radius: 12px;
+    background-color: #45b649;
+    width: 12px;
+    height: 12px;
+    display: inline-block;
+}
+.red-circle{
+    border-radius: 12px;
+    background-color: #fc5c7d;
+    width: 12px;
+    height: 12px;
+    display: inline-block;
+}
+.violet-circle{
+    border-radius: 12px;
+    background-color: #9c27b0;
+    width: 12px;
+    height: 12px;
+    display: inline-block;
+}
+.cr-page__title{
+    padding:5px 10px;
+}
+.btn-active{
+    color:white;
+    text-decoration: none;
+    background-color: #45b649;
+    
+}
+.btn-active.btn-link:hover {
+    color: #eee;
+    text-decoration: none;
+}
+.card-title{
+    text-align:center;
+}
+.card-period{
+    display: flex;
+    flex-direction: column;
+    float:left;
+    text-align: center;
+}
+.card-count{
+    display: flex;
+    flex-direction: column;
+    float:right;
+    text-align: center;
+}
+.EnjoyPage div.cr-page__header, .MyPage div.cr-page__header{
+    background-color:#4d5ef8;
+    color: white;
+    margin: 0 -16px;
+}
+.EnjoyPage .cr-page__title{
+    padding: 20px 20px 5px 20px ;
+}
+.MyPage .cr-page__title{
+    padding: 20px 20px 20px 20px ;
+}
+.EnjoyPage div.cr-page__header .btn-link, .MyPage div.cr-page__header .btn-link{
+    color: white;
+}
+.btn-violet{
+    background: #9c27b0 linear-gradient(180deg, #9c27b0, #9c27b0) repeat-x;
+    border:0;
+}
+.read-rule{
+    font-size: 0.8rem;
+}
+.read-rule div{
+    padding: 12px;
+    
+}
+.modal-dialog{
+    margin-bottom: 50px;
+}
+.category-bar{
+    margin:0 15px!important;
+}
+.contract-line{
+    display: inline-block;
+    margin: 1px 5px;
+    padding: 2px 10px;
+    border-radius: 5px;
+    border:1px solid #999;
+
+}
+.number-line{
+   text-align: center;
+    border-radius: 5px;
+    border:1px solid #999;
+    cursor: pointer;
+}
+.category-bar button.btn{
+    font-weight: 700;
+}
+.list-products{
+    border-bottom: 1px solid darkgoldenrod;
+}
+.list-products .card-title{
+    font-size:0.8rem;
+    font-weight: 400;
+    color: black;
+}
+.list-products{
+    font-size:0.8rem;
+    font-weight: 300;
+    color: darkgoldenrod;
+}
+.list-product{
+    font-size:0.8rem;
+    font-weight: 300;
+    color: darkgoldenrod;
+}
+.list-products img{
+    height: 150px;
+    width:120px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.list-products .card-body{
+    height: 140px;
+    padding: 10px 10px;
+}
+.list-products .card-title{
+    margin-bottom: 30px;
+}
+.modal-image{
+    width:40%;
+    height:200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.btn-grey{
+    background-color: rgba(0,0,0,.12)!important;
+    color: rgba(0,0,0,.26)!important;
+    opacity: 1!important;
+}
+.MyPage .form-control{
+    text-align:left;
+    padding-left:20px;
+    border:1px solid #ced4da;
+    cursor:pointer!important;
+}
+.MyPage a.form-control:hover{
+    text-align:left;
+    padding-left:20px;
+    border:1px solid #ced4da;
+    text-decoration: none;
+    cursor:pointer;
+    color:#6a82fb
+
+}
+.MyPage .cr-page__header>a{
+    color:white;
+    text-decoration: none;
+}
+.MyPage .cr-page__header {
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+h4.h4.cr-page__title{
+    margin:0;
+}
+.MyPage .category-bar button.btn{
+    width:50%;
+}
+.MyPage .category-bar button.btn.btn-active{
+    color:#333;
+    text-decoration: none;
+    background-color: #ccc;
+}
+.MyPage .form-control{
+    font-weight: 400;
+    font-size: 1rem;
+    padding:15px 10px;
+    height: calc(1.5em + 0.75rem + 20px);
+}
+.AdminEnjoy .number-line{
+    margin:5px 0;
+    padding:10px 0;
+}
+.MyPage .form-control.recharge-control{
+    height:calc(1.5em + 0.75rem + 40px);
+}
+.MyPage .form-control.admin-recharge-control{
+    height:calc(1.5em + 0.75rem + 80px);
+    overflow: auto;
+}
+.razorpay-payment-button{
+    display: none!important;
+}
+.data-content{
+    font-size: 0.85rem;
+    color: #333;
+    border:1px solid #ccc!important;
+    border-left: 6px solid #ccc!important;
+    border-color: #2196F3!important;
+    background-color: #ddffff!important;
+}
+a.whatsapp{
+    position: fixed;
+    right: 20px;
+    bottom: 120px;
+    z-index: 10000;
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    
+    // background-color: ;
+
+}
+a.telegram{
+    position: fixed;
+    right: 20px;
+    bottom: 70px;
+    z-index: 10000;
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    // background-color: ;
+    
+}
+.notification-link{
+    text-decoration: none;
+    color: white;
+}
+.notification-link:hover{
+    text-decoration: none;
+    color: #aaa;
+}
