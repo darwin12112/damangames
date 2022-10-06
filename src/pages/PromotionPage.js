@@ -111,7 +111,7 @@ const PromotionPage = (props) => {
         <Col md={12}  className={'mt-4 ml-3 mr-3'} >
           My Promotion Link
           <br />
-          <span style={{float:'right',textDecoration:'underline'}} className={'mr-5'}> https://www.predictionmall.com/signup/{bonus.ref_code} </span>
+          <span style={{float:'right',textDecoration:'underline'}} className={'mr-5'}> https://www.damangames.co/signup/{bonus.ref_code} </span>
         </Col> 
         <Col md={12} style={{textAlign:'center'}} className={'mt-3'}>
           <Link to={"/signup/"+bonus.ref_code} style={{fontWeight:'500'}} > Open Link </Link>
